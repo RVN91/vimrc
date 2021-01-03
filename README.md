@@ -1,4 +1,4 @@
-# vimrc
+# vimrc config
 One configuration to rule them all (platforms)
 
 ## Install
@@ -24,8 +24,11 @@ The leader is ",", so whenever you see \<leader\> it means ",".
 
 ### Mappings
 \<leader\>t - Toggles file system explorer on and off.
+
 \<leader\>e - Reloads the vimrc configs.
+
 \<C-Up\> - Increase the font size
+
 \<C-Down\> - Decrease the font size
 
 ## Download and update plugins
