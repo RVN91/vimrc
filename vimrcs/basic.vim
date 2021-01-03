@@ -41,3 +41,18 @@ set hlsearch
 " Add a bit extra margin to the left
 set foldcolumn=1
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Fontsize
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set guifont=Consolas:h11
+
+nnoremap <C-Up> :silent! let &guifont = substitute(
+ \ &guifont,
+ \ ':h\zs\d\+',
+ \ '\=eval(submatch(0)+1)',
+ \ '')<CR>
+nnoremap <C-Down> :silent! let &guifont = substitute(
+ \ &guifont,
+ \ ':h\zs\d\+',
+ \ '\=eval(submatch(0)-1)',
+ \ '')<CR>
