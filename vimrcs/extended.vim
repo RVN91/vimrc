@@ -1,29 +1,6 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Main ~/.vimrc
+" Settings that needs to be configured after loading plugins
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Basic vim settings
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Set line numbers and end column
-set number
-set colorcolumn=80
-
-" Delete lines using backspace
-set backspace=indent,eol,start
-
-" Set tab as 4 empty spaces wide
-set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
-
-" Disable annoying sounds
-set noerrorbells visualbell t_vb=
-autocmd GUIEnter * set visualbell t_vb=
-
-" Set templates for file types
-au BufNewFile * silent! 0r c:\Users\rasmus\.vim\skeleton\template.%:e
-
-" Set mapleader
-let mapleader=","
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => GUI related
