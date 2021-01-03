@@ -4,7 +4,7 @@ timestamp() {
   date +"at %H:%M:%S on %d/%m/%Y"
 }
 git commit -am "Regular auto-commit $(timestamp)"
-git push origin master
+git push --all
 
 Enter username for https://github.com: rvn91
 Enter password for https://github.com: Rhenium186
