@@ -20,11 +20,17 @@ autocmd! bufwritepost ~/.vim_runtime/vimrcs/remap.vim source
 autocmd! bufwritepost ~/.vim_runtime/vimrcs/plugins_config.vim source 
  \ ~/.vim_runtime/vimrcs/plugins_config.vim
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Increase or decrease the font size 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Increase font size
 nnoremap <C-Up> :silent! let &guifont = substitute(
  \ &guifont,
  \ ':h\zs\d\+',
  \ '\=eval(submatch(0)+1)',
  \ '')<CR>
+
+" Decrease font size
 nnoremap <C-Down> :silent! let &guifont = substitute(
  \ &guifont,
  \ ':h\zs\d\+',
