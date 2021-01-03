@@ -14,8 +14,9 @@ import requests
 from os import path
 
 # --- Globals ----------------------------------------------
+# pack/themes/opt/dracula https://github.com/dracula/vim
 PLUGINS = """
-pack/themes/opt/dracula https://github.com/dracula/vim
+vim-dogrun https://github.com/wadackel/vim-dogrun
 nerdtree https://github.com/preservim/nerdtree
 """.strip()
 
