@@ -14,7 +14,7 @@ set guioptions-=L
 " Colorscheme
 "packadd! dracula
 syntax enable
-colorscheme dogrun
+colorscheme nord 
 set background=dark
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
