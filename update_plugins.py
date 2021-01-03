@@ -44,9 +44,6 @@ def download_extract_replace(plugin_name, zip_path, temp_dir, source_dir):
         shutil.rmtree(plugin_dest_path)
     except OSError:
         pass
-    
-    print(plugin_dest_path)
-    print(plugin_temp_path)
 
     shutil.move(plugin_temp_path, plugin_dest_path)
     print("Updated {0}".format(plugin_name))
@@ -69,5 +66,4 @@ if __name__ == "__main__":
         else:
             [update(x) for x in PLUGINS.splitlines()]
     finally:
-        print("")
-        #shutil.rmtree(temp_directory)
+        shutil.rmtree(temp_directory)
