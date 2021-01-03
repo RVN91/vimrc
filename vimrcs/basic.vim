@@ -21,7 +21,6 @@ au BufNewFile * silent! 0r c:\Users\rasmus\.vim\skeleton\template.%:e
 " Set mapleader
 let mapleader=","
 
-
 " Set to auto read when a file is changed from the outside
 set autoread
 au FocusGained,BufEnter * checktime
