@@ -18,6 +18,7 @@ from os import path
 PLUGINS = """
 nord-vim https://github.com/arcticicestudio/nord-vim
 nerdtree https://github.com/preservim/nerdtree
+vim-yankstack https://github.com/maxbrunsfeld/vim-yankstack
 """.strip()
 
 GITHUB_ZIP = "%s/archive/master.zip"
