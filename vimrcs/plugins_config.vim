@@ -26,7 +26,7 @@ let g:NERDTreeWinPos = "right"
 let NERDTreeShowHidden=0
 let NERDTreeIgnore = ['\.pyc$', '__pycache__']
 let g:NERDTreeWinSize=35
-noremap <leader>nn :NERDTreeToggle<cr>
+noremap <leader>tt :NERDTree<cr>
 noremap <leader>nb :NERDTreeFromBookmark<Space>
 noremap <leader>nf :NERDTreeFind<cr>
 " Exit Vim if NERDTree is the only window left.
