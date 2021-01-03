@@ -12,7 +12,7 @@ set guioptions-=l
 set guioptions-=L
 
 " Colorscheme
-packadd! dracula
+"packadd! dracula
 syntax enable
 colorscheme dracula
 
