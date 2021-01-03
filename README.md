@@ -16,5 +16,8 @@ git clone --depth=1 https://github.com/rvn91/vimrc.git %HOMEPATH%\\.vim_runtime
 Double click on:
 C:/Users/YOURUSERNAME/.vim_runtime/install.sh
 
+## Plugins
+Dracula (https://github.com/dracula/vim)
+
 ## Download and update plugins
 Run update_plugins.py
