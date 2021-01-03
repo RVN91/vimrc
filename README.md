@@ -1,5 +1,7 @@
 # vimrc
 
+One configuration to rule them all (platforms)
+
 ## Install
 
 ### Linux:
