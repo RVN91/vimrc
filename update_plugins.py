@@ -17,7 +17,6 @@ from os import path
 PLUGINS = """
 pack/themes/opt/dracula https://github.com/dracula/vim
 nerdtree https://github.com/preservim/nerdtree
-vim-fontsize https://github.com/drmikehenry/vim-fontsize
 """.strip()
 
 GITHUB_ZIP = "%s/archive/master.zip"
