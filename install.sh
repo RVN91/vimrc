@@ -9,7 +9,7 @@ source ~/.vim_runtime/vimrcs/basic.vim
 source ~/.vim_runtime/vimrcs/filetypes.vim
 source ~/.vim_runtime/vimrcs/plugins_config.vim
 source ~/.vim_runtime/vimrcs/remap.vim
-source ~/.vim_runtime/plugins/vim-fontsize/plugins/fontsize.vim
+source ~/.vim_runtime/plugins/vim-fontsize/plugin/fontsize.vim
 source ~/.vim_runtime/vimrcs/extended.vim
 
 try
