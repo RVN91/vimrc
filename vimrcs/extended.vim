@@ -14,7 +14,7 @@ set guioptions-=L
 " Colorscheme
 "packadd! dracula
 syntax enable
-colorscheme dracula
+colorscheme dogrun
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Turn persistent undo on 
