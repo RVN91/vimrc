@@ -15,7 +15,7 @@ from os import path
 
 # --- Globals ----------------------------------------------
 PLUGINS = """
-pack/themes/opt https://github.com/dracula/vim
+pack/themes/opt/dracula https://github.com/dracula/vim
 nerdtree https://github.com/preservim/nerdtree
 """.strip()
 
