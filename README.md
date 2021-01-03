@@ -20,13 +20,13 @@ Nord. An arctic, north-bluish clean and elegant Vim color theme (https://github.
 
 ## Keymaps
 ### Leader
-The leader is ",", so whenever you see <leader> it means ",".
+The leader is ",", so whenever you see \<leader\> it means ",".
 
 ### Mappings
 \<leader\>t - Toggles file system explorer on and off.
 \<leader\>e - Reloads the vimrc configs.
-<C-up>Up - Increase the font size
-<C-up>Down - Decrease the font size
+\<C-up\>Up - Increase the font size
+\<C-up\>Down - Decrease the font size
 
 ## Download and update plugins
 Run update_plugins.py
