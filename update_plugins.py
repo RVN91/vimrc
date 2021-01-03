@@ -16,6 +16,7 @@ from os import path
 # --- Globals ----------------------------------------------
 PLUGINS = """
 vim https://github.com/dracula/vim
+nerdtree https://github.com/preservim/nerdtree
 """.strip()
 
 GITHUB_ZIP = "%s/archive/master.zip"
