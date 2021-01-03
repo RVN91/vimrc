@@ -16,12 +16,12 @@ map <leader>e :e! ~/.vim_runtime/my_configs.vim<cr>
 autocmd! bufwritepost ~/.vim_runtime/my_configs.vim source 
  \ ~/.vim_runtime/my_configs.vim
 
-nnoremap <C-Up> :silent! let &guifont = substitute(
+nnoremap <leader>+ :silent! let &guifont = substitute(
  \ &guifont,
  \ ':h\zs\d\+',
  \ '\=eval(submatch(0)+1)',
  \ '')<CR>
-nnoremap <C-Down> :silent! let &guifont = substitute(
+nnoremap <leader>- :silent! let &guifont = substitute(
  \ &guifont,
  \ ':h\zs\d\+',
  \ '\=eval(submatch(0)-1)',
