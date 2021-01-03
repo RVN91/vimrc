@@ -15,7 +15,7 @@ from os import path
 
 # --- Globals ----------------------------------------------
 PLUGINS = """
-vim https://github.com/dracula/vim
+pack/themes/start https://github.com/dracula/vim
 nerdtree https://github.com/preservim/nerdtree
 """.strip()
 
@@ -24,7 +24,7 @@ GITHUB_ZIP = "%s/archive/master.zip"
 SOURCE_DIR = path.join(path.dirname(__file__), "plugins")
 
 
-def download_extract_replace(plugin_name, zip_path, temp_dir, source_dir):
+def download_extract_replace(plugin_name, folder_name, zip_path, temp_dir, source_dir):
     temp_zip_path = path.join(temp_dir, plugin_name)
 
     # Download and extract file in temp dir
@@ -39,7 +39,7 @@ def download_extract_replace(plugin_name, zip_path, temp_dir, source_dir):
     )
 
     # Remove the current plugin and replace it with the extracted
-    plugin_dest_path = path.join(source_dir, plugin_name)
+    plugin_dest_path = path.join(source_dir, folder_name)
 
     try:
         shutil.rmtree(plugin_dest_path)
@@ -51,10 +51,11 @@ def download_extract_replace(plugin_name, zip_path, temp_dir, source_dir):
 
 
 def update(plugin):
-    name, github_url = plugin.split(" ")
-    print(name, github_url)
+    folder, github_url = plugin.split(" ")
+    name = github_url.split("/")[-1]
+    
     zip_path = GITHUB_ZIP % github_url
-    download_extract_replace(name, zip_path, temp_directory, SOURCE_DIR)
+    download_extract_replace(name, folder, zip_path, temp_directory, SOURCE_DIR)
     
 
 if __name__ == "__main__":
