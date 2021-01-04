@@ -2,15 +2,19 @@
 One configuration to rule them all (platforms)
 
 ## Install
-### Linux:
+### Linux (you know what to do...):
 git clone --depth=1 https://github.com/rvn91/vimrc.git ~/.vim_runtime
 
 sh ~/.vim_runtime/install.sh
 
 ### Windows:
+Open GIT Bash inside of YOURUSERNAME/.vim_runtime/ and clone the git repo:
+
 git clone --depth=1 https://github.com/rvn91/vimrc.git ~/.vim_runtime
 
-Open GIT Bash inside of YOURUSERNAME/.vim_runtime/ and run "bash install.sh":
+This saves a runtime environment inside ./vim_runtime, where the plugins will be stored.
+
+Run "install.sh" in GIT Bash: 
 
 C:/Users/YOURUSERNAME/.vim_runtime/install.sh
 
@@ -41,4 +45,8 @@ The leader is ",", so whenever you see \<leader\> it means ",".
 \<leader\>ig - Toggles the identation guides on and off
 
 ## Download and update plugins
-Run update_plugins.py
+Run update_plugins.py. Can be run with a default Python distribution.
+
+From inside VIM:
+
+!python update_plugins.py
