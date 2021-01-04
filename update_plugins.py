@@ -14,11 +14,12 @@ import requests
 from os import path
 
 # --- Globals ----------------------------------------------
-# pack/themes/opt/dracula https://github.com/dracula/vim
+
 PLUGINS = """
 nord-vim https://github.com/arcticicestudio/nord-vim
 nerdtree https://github.com/preservim/nerdtree
 vim-yankstack https://github.com/maxbrunsfeld/vim-yankstack
+vim-indent-guides https://github.com/nathanaelkane/vim-indent-guides
 """.strip()
 
 GITHUB_ZIP = "%s/archive/master.zip"
