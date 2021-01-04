@@ -19,6 +19,12 @@ NERDTree. File system explorer for the Vim editor (https://github.com/preservim/
 
 Nord. An arctic, north-bluish clean and elegant Vim color theme (https://github.com/arcticicestudio/nord-vim)
 
+Indent Guides. Plugin for visually displaying indent levels in Vim (https://github.com/nathanaelkane/vim-indent-guides)
+
+virtualenv.vim. Access virtualenv inside VIM (https://github.com/jmcantrell/vim-virtualenv)
+
+yankstank. Allows you to yank and delete things without worrying about losing the text that you yanked previously (https://github.com/maxbrunsfeld/vim-yankstack)
+
 ## Keymaps
 ### Leader
 The leader is ",", so whenever you see \<leader\> it means ",".
@@ -33,7 +39,6 @@ The leader is ",", so whenever you see \<leader\> it means ",".
 \<C-Down\> - Decrease the font size
 
 \<leader\>ig - Toggles the identation guides on and off
-
 
 ## Download and update plugins
 Run update_plugins.py
