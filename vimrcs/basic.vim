@@ -11,12 +11,15 @@ set backspace=indent,eol,start
 " Set tab as 4 empty spaces wide
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 
+" UTF-8 Support
+set encoding=utf-8
+
 " Disable annoying sounds
 set noerrorbells visualbell t_vb=
 autocmd GUIEnter * set visualbell t_vb=
 
-" Set templates for file types
-au BufNewFile * silent! 0r c:\Users\rasmus\.vim\skeleton\template.%:e
+" Set templates for new file types
+au BufNewFile * silent! 0r c:\Users\rasmus\.vim_runtime\templates\template.%:e
 
 " Set mapleader
 let mapleader=","
@@ -56,3 +59,18 @@ nnoremap <C-Down> :silent! let &guifont = substitute(
  \ ':h\zs\d\+',
  \ '\=eval(submatch(0)-1)',
  \ '')<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Python indentation 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+au BufNewFile,BufRead *.py
+    \ set tabstop=4      |
+    \ set softtabstop=4  |
+    \ set shiftwidth=4   |
+    \ set textwidth=79   |
+    \ set expandtab      |
+    \ set autoindent     |
+    \ set fileformat=unix
+
+
+
