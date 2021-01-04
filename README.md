@@ -44,6 +44,9 @@ The leader is ",", so whenever you see \<leader\> it means ",".
 
 \<leader\>ig - Toggles the identation guides on and off
 
+## Templating
+Automatic templates for C and Python files.
+
 ## Download and update plugins
 Run update_plugins.py. Can be run with a default Python distribution.
 

@@ -26,6 +26,7 @@ nerdtree https://github.com/preservim/nerdtree
 vim-yankstack https://github.com/maxbrunsfeld/vim-yankstack
 vim-indent-guides https://github.com/nathanaelkane/vim-indent-guides
 vim-virtualenv https://github.com/jmcantrell/vim-virtualenv
+vim-fugitive https://github.com/tpope/vim-fugitive
 """.strip()
 
 GITHUB_ZIP = "%s/archive/master.zip"
