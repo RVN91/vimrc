@@ -29,3 +29,10 @@ let g:NERDTreeWinSize=35
 " Exit Vim if NERDTree is the only window left.
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
     \ quit | endif
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Zig-vim
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Disable automatic code formatting on save
+let g:zig_fmt_autosave = 0
