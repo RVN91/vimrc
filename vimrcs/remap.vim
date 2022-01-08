@@ -48,8 +48,10 @@ map <C-p> "+P
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Pandoc commands 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" figure out filetype :setl filetype?
 " This command avoids admin rights. But only god knows what it is doing 
 augroup my_markdown
     autocmd!
-    autocmd FileType markdown nnoremap <F5> :<c-u>silent call system('pandoc '.expand('%:p:S').' -s -o '.expand('%:p:r:S').'.pdf')<cr>
+    autocmd FileType markdown nnoremap <F5> :w<cr> :<c-u>silent call system('pandoc '.expand('%:p:S').' -o '.expand('%:p:r:S').'.pdf')<cr>
 augroup ENDautocmd 
+
