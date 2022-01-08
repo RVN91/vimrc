@@ -30,9 +30,8 @@ let g:NERDTreeWinSize=35
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
     \ quit | endif
 
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Zig-vim
+" => Zig language server (ZLS)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Disable automatic code formatting on save
+" Disable autformatting of *.zig files
 let g:zig_fmt_autosave = 0

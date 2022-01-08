@@ -1,5 +1,5 @@
 #!/bin/sh
-git add --all
+git add -A
 timestamp() {
   date +"at %H:%M:%S on %d/%m/%Y"
 }
