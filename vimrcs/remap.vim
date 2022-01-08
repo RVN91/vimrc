@@ -44,3 +44,12 @@ nnoremap <C-Down> :silent! let &guifont = substitute(
 " gvim lets you copy text to clipboard by: "+y
 vnoremap <C-c> "+y
 map <C-p> "+P
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Pandoc commands 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" This command avoids admin rights. But only god knows what it is doing 
+augroup my_markdown
+    autocmd!
+    autocmd FileType markdown nnoremap <F5> :<c-u>silent call system('pandoc '.expand('%:p:S').' -s -o '.expand('%:p:r:S').'.pdf')<cr>
+augroup ENDautocmd 
