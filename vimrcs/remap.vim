@@ -36,3 +36,11 @@ nnoremap <C-Down> :silent! let &guifont = substitute(
  \ ':h\zs\d\+',
  \ '\=eval(submatch(0)-1)',
  \ '')<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Copying and pasting to and from VIM
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" To copy into register <LETTER>: "<LETTER>y
+" gvim lets you copy text to clipboard by: "+y
+vnoremap <C-c> "+y
+map <C-p> "+P
