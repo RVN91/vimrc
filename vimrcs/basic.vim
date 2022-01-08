@@ -72,5 +72,3 @@ au BufNewFile,BufRead *.py
     \ set autoindent     |
     \ set fileformat=unix
 
-
-

@@ -29,6 +29,8 @@ virtualenv.vim. Access virtualenv inside VIM (https://github.com/jmcantrell/vim-
 
 yankstank. Allows you to yank and delete things without worrying about losing the text that you yanked previously (https://github.com/maxbrunsfeld/vim-yankstack)
 
+zig-vim. Zig language server. Codehighlighting for the Zig programming language (https://github.com/ziglang/zig.vim)
+
 ## Keymaps
 ### Leader
 The leader is ",", so whenever you see \<leader\> it means ",".
@@ -43,6 +45,10 @@ The leader is ",", so whenever you see \<leader\> it means ",".
 \<C-Down\> - Decrease the font size
 
 \<leader\>ig - Toggles the identation guides on and off
+
+\<F5\> - Compiles the source file. Currentlyb only for markdown files using pandcc
+
+\<C-c\> and \<C-p\> - Copy and paste from and to vim using system clipboard
 
 ## Templating
 Automatic templates for C and Python files.
