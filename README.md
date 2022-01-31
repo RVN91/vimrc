@@ -1,5 +1,5 @@
-# vimrc config
-One configuration to rule them all (platforms)
+# vimrc config for neovim
+One configuration to rule them all (platforms).
 
 ## Install
 ### Linux (you know what to do...):
@@ -17,6 +17,11 @@ This saves a runtime environment inside ./vim_runtime, where the plugins will be
 Run "install.sh" in GIT Bash: 
 
 C:/Users/YOURUSERNAME/.vim_runtime/install.sh
+
+#### Cmder
+For cmder you need to enter the following in Settings -> Environment
+
+"set TERM=xterm-256color"
 
 ## Plugins
 NERDTree. File system explorer for the Vim editor (https://github.com/preservim/nerdtree)

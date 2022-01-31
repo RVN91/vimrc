@@ -16,4 +16,22 @@ source ~/.vim_runtime/my_configs.vim
 catch
 endtry' > ~/.vimrc
 
+
+case "$OSTYPE" in
+  linux*)   
+      echo "OS: LINUX" 
+      echo 'set runtimepath^=~/.vim runtimepath+=~/.vim/after
+let &packpath = &runtimepath
+source ~/.vimrc' > ~/.config/nvim/init.vim
+      ;;
+  msys*)    
+      echo "OS: WINDOWS" 
+      echo 'set runtimepath^=~/.vim runtimepath+=~/.vim/after
+let &packpath = &runtimepath
+source ~/.vimrc' > $LOCALAPPDATA/nvim/init.vim
+      ;;
+  cygwin*)  echo "ALSO WINDOWS" ;;
+  *)        echo "unknown: $OSTYPE" ;;
+esac
+
 echo "Vim config installed"
