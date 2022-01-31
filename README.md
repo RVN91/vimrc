@@ -26,8 +26,6 @@ For cmder you need to enter the following in Settings -> Environment
 ## Plugins
 NERDTree. File system explorer for the Vim editor (https://github.com/preservim/nerdtree)
 
-Nord. An arctic, north-bluish clean and elegant Vim color theme (https://github.com/arcticicestudio/nord-vim)
-
 Indent Guides. Plugin for visually displaying indent levels in Vim (https://github.com/nathanaelkane/vim-indent-guides)
 
 virtualenv.vim. Access virtualenv inside VIM (https://github.com/jmcantrell/vim-virtualenv)
