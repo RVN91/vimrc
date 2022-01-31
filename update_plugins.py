@@ -21,7 +21,6 @@ from os import path
 # --- Globals ----------------------------------------------
 
 PLUGINS = """
-nord-vim https://github.com/arcticicestudio/nord-vim
 nerdtree https://github.com/preservim/nerdtree
 vim-yankstack https://github.com/maxbrunsfeld/vim-yankstack
 vim-indent-guides https://github.com/nathanaelkane/vim-indent-guides
@@ -46,9 +45,12 @@ def download_extract_replace(plugin_name, folder_name, zip_path, temp_dir, sourc
     zip_f = zipfile.ZipFile(temp_zip_path)
     zip_f.extractall(temp_dir)
 
-    plugin_temp_path = path.join(
-        temp_dir, path.join(temp_dir, "%s-master" % plugin_name)
-    )
+    if (plugin_name == "nightfox.nvim"):
+        plugin_temp_path = path.join(temp_dir, path.join(temp_dir, 
+            "%s-main" % plugin_name))
+    else:
+        plugin_temp_path = path.join(temp_dir, path.join(temp_dir, 
+            "%s-master" % plugin_name))
 
     # Remove the current plugin and replace it with the extracted
     plugin_dest_path = path.join(source_dir, folder_name)

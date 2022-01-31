@@ -14,7 +14,7 @@ set guioptions-=L
 " Colorscheme
 "packadd! dracula
 syntax enable
-colorscheme nord 
+colorscheme slate 
 set background=dark
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
